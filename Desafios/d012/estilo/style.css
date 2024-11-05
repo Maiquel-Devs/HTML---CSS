@@ -31,12 +31,30 @@ header a, footer a {
     font-weight: bolder;
 }
 
-header a:hover, footer a:hover { /*8:23*/
+header a:hover, footer a:hover { 
     text-decoration: underline;
 }
 
+section {
+    padding-top: 10vh; /*10%*/
+    padding-bottom: 10vh; /*10%*/
+    line-height: 2em;
+    padding-left: 30px;
+}
+
 section.normal {
-    /*9:25*/
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.253);
 }
 
 footer {
