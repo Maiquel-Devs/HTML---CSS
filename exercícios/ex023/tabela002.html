@@ -4,17 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        thead,tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+    </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!-- ANATOMIA PARA TABELAS GRANDES
      TABLE
+         CAPTION (legenda)
          THEAD (cabeça)
-              TR, TD , TH
+              TR, TD , TH ("Título de Tabela"), (linha , dado e título)
          TBODY (corpo)
               TR, TD, TH
          TFOOT (rodapé)
                TR, TD ,TH
     -->
-                                 <H1>4:13</H1>
-</html>
+      <table>
+        <caption>População Das Unidades Federativas Do Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>  
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 019</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio De Janeiro</td>
+                <td>17 264 943</td>
+            </tr>
+            <tr>
+                <td>Santa Catarinha</td>
+                <td>7 610 000</td>
+            </tr>
+        </tbody>
+            
+        <tfoot>
+            <tr>
+                <th scope="row">Total De Habitantes</th>
+                <td>00000</td>
+            </tr>
+        </tfoot>
+      </table>
+</html>    
+
